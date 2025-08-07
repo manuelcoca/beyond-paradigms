@@ -15,44 +15,6 @@ printf("Hello");  // Could write to console, file, or network
 
 > _"The UNIX system call interface has been polymorphic from the very beginning. When you call `open`, `close`, `read`, or `write`, you are using polymorphic functions. The device drivers are selected at runtime based on the device type."_ — Robert C. Martin
 
-## 📚 The Four Pillars Demonstrated
-
-### 1. **Abstraction**
-
-_Hiding implementation details behind interfaces_
-
-- **Go**: `PaymentProcessor` and `NotificationSender` interfaces
-- **C#**: Abstract classes and interfaces
-- **React**: Component props and custom hooks
-- **Angular**: Services and dependency injection
-
-### 2. **Encapsulation**
-
-_Bundling data with methods, controlling access_
-
-- **Go**: Private struct fields (lowercase) + public methods
-- **C#**: Private fields + public properties/methods
-- **React**: Private component state + public props
-- **Angular**: Private class members + public methods
-
-### 3. **Polymorphism**
-
-_Different types implementing the same interface_
-
-- **Go**: `CreditCardProcessor` and `PayPalProcessor` both implement `PaymentProcessor`
-- **C#**: Multiple classes implementing same interface
-- **React**: Different components with same props interface
-- **Angular**: Multiple services implementing same interface
-
-### 4. **Composition**
-
-_Building complex objects from simpler ones_
-
-- **Go**: `OrderService` composed of `PaymentProcessor` + `NotificationSender`
-- **C#**: Classes containing instances of other classes
-- **React**: Components using other components
-- **Angular**: Services injecting other services
-
 ## 🛠️ Workshop Tasks
 
 ### Task 1: Code Reading & Analysis (25 minutes)
