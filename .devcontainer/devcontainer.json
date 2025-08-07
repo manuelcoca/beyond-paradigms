@@ -2,14 +2,6 @@
   "name": "Beyond Paradigms Workshop",
   "image": "mcr.microsoft.com/devcontainers/typescript-node:1-18-bullseye",
   "features": {
-    "ghcr.io/devcontainers/features/common-utils:2": {
-      "installZsh": true,
-      "configureZshAsDefaultShell": true,
-      "installOhMyZsh": true,
-      "username": "vscode",
-      "userUid": "1000",
-      "userGid": "1000"
-    },
     "ghcr.io/devcontainers/features/dotnet:2": {
       "version": "8.0"
     },
@@ -54,5 +46,5 @@
     }
   },
   "postCreateCommand": "npm install -g @angular/cli@latest && echo 'Beyond Paradigms Workshop Environment Ready! 🚀'",
-  "remoteUser": "vscode"
+  "remoteUser": "node"
 }
