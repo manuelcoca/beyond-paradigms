@@ -1,54 +1,53 @@
 {
-    "name": "Beyond Paradigms Workshop",
-    "image": "mcr.microsoft.com/devcontainers/universal:2",
-    "features": {
-        "ghcr.io/devcontainers/features/node:1": {
-            "version": "18"
-        },
-        "ghcr.io/devcontainers/features/dotnet:2": {
-            "version": "8.0"
-        },
-        "ghcr.io/devcontainers/features/go:1": {
-            "version": "1.21"
-        },
-        "ghcr.io/devcontainers/features/angular:1": {}
+  "name": "Beyond Paradigms Workshop",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "18"
     },
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "ms-vscode.vscode-typescript-next",
-                "ms-dotnettools.csharp",
-                "golang.go",
-                "angular.ng-template",
-                "bradlc.vscode-tailwindcss",
-                "esbenp.prettier-vscode"
-            ],
-            "settings": {
-                "terminal.integrated.defaultProfile.linux": "bash",
-                "editor.formatOnSave": true,
-                "editor.defaultFormatter": "esbenp.prettier-vscode"
-            }
-        }
+    "ghcr.io/devcontainers/features/dotnet:2": {
+      "version": "8.0"
     },
-    "forwardPorts": [3000, 4200, 5000, 8080],
-    "portsAttributes": {
-        "3000": {
-            "label": "React App",
-            "onAutoForward": "notify"
-        },
-        "4200": {
-            "label": "Angular App", 
-            "onAutoForward": "notify"
-        },
-        "5000": {
-            "label": "C# Backend",
-            "onAutoForward": "notify"
-        },
-        "8080": {
-            "label": "Go Backend",
-            "onAutoForward": "notify"
-        }
+    "ghcr.io/devcontainers/features/go:1": {
+      "version": "1.21"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.vscode-typescript-next",
+        "ms-dotnettools.csharp",
+        "golang.go",
+        "angular.ng-template",
+        "bradlc.vscode-tailwindcss",
+        "esbenp.prettier-vscode"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      }
+    }
+  },
+  "forwardPorts": [3000, 4200, 5000, 8080],
+  "portsAttributes": {
+    "3000": {
+      "label": "React App",
+      "onAutoForward": "notify"
     },
-    "postCreateCommand": "echo 'Beyond Paradigms Workshop Environment Ready! 🚀'",
-    "remoteUser": "codespace"
+    "4200": {
+      "label": "Angular App",
+      "onAutoForward": "notify"
+    },
+    "5000": {
+      "label": "C# Backend",
+      "onAutoForward": "notify"
+    },
+    "8080": {
+      "label": "Go Backend",
+      "onAutoForward": "notify"
+    }
+  },
+  "postCreateCommand": "npm install -g @angular/cli@latest && echo 'Beyond Paradigms Workshop Environment Ready! 🚀'",
+  "remoteUser": "codespace"
 }
