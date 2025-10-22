@@ -63,23 +63,20 @@ cd beyond-paradigms/workshop-exercises
 # Follow the README in each exercise directory
 ```
 
-## Learning Outcomes
+## Key Takeaways
+
+> **Context Matters**: Choose tools based on problem requirements, not paradigm marketing
+> **Simplicity Wins**: "As simple as possible, but no simpler" applies to all code
+
+The goal of this workshop is to internalize and think in terms of software design principles that apply universally, not programming paradigms.
 
 By completing this workshop, you'll understand:
 
 - **Universal Design Principles**: Why good design transcends programming paradigms
-- **Shared State Problems**: The root cause of most software complexity
-- **Dependency Management**: How feature coupling destroys maintainability
+- **Cross-Paradigm Patterns**: How the same solutions work in different contexts
+- **Dependency Management**: How dependency management and separation of concerns is key across all paradigms
 - **Error Handling**: Why proper error handling is critical across all languages
 - **Abstraction Trade-offs**: When clean code principles help vs. hurt
-- **Cross-Paradigm Patterns**: How the same solutions work in different contexts
-
-## 💡 Key Takeaways
-
-- **Same Problems Everywhere**: Every paradigm struggles with complexity, state, and dependencies
-- **Same Solutions Work**: Separation of concerns, immutability, and proper error handling work universally
-- **Context Matters**: Choose tools based on problem requirements, not paradigm marketing
-- **Simplicity Wins**: "As simple as possible, but no simpler" applies to all code
 
 ---
 
