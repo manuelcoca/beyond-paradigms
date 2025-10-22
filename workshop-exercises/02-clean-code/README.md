@@ -1,10 +1,10 @@
 # Workshop Exercise 2: Clean Code & Abstraction Patterns
 
-## 🎯 Objective
+## Objective
 
 Explore different approaches to code organization and abstraction. Compare highly structured, principle-driven code with more direct implementations to understand the trade-offs and form your own opinions about when each approach works best.
 
-## 🔍 What You'll Explore
+## What You'll Explore
 
 ### The Approach:
 
@@ -19,9 +19,9 @@ Examine implementations that follow strict clean code principles and evaluate:
 - **Maintenance considerations**: How would changes be implemented?
 - **Team collaboration**: How would new developers understand this code?
 
-## 📚 Workshop Tasks
+## Workshop Tasks
 
-### Task 1: Code Reading & Analysis (20 minutes)
+### Task 1: Code Reading & Analysis
 
 **Individual Work**: Navigate through both codebases and understand what they do:
 
@@ -30,7 +30,7 @@ Examine implementations that follow strict clean code principles and evaluate:
 3. **Observe**: Note your experience navigating the code structure
 4. **Document**: What did you notice about the organization?
 
-### Task 2: Testing Experience (15 minutes)
+### Task 2: Testing Experience
 
 **Hands-On Challenge**:
 
@@ -53,7 +53,7 @@ Your goal: **Make the PayPal processor charge a 4.0% fee instead of 3.49%**
 
 5. **Run the test again** - it should now pass
 
-### Task 3: Reflection & Discussion (10 minutes)
+### Task 3: Reflection & Discussion
 
 **Group Discussion**:
 
@@ -62,7 +62,7 @@ Your goal: **Make the PayPal processor charge a 4.0% fee instead of 3.49%**
 - How would you approach writing similar functionality?
 - What trade-offs did you observe?
 
-## 🔧 Running the Examples
+## Running the Examples
 
 ### Go Backend:
 
@@ -80,7 +80,7 @@ dotnet restore
 dotnet run
 ```
 
-## 🧪 Running the Tests
+## Running the Tests
 
 ### Go Tests:
 
@@ -96,34 +96,6 @@ cd csharp
 dotnet test
 ```
 
-## 💡 Reflection Points
-
-### Patterns to Observe:
-
-1. **Function granularity**: How small should functions be?
-2. **Interface usage**: When are interfaces helpful?
-3. **Code organization**: How does structure affect readability?
-4. **Testing complexity**: What makes tests easy or hard to write?
-5. **Developer experience**: How does code organization affect understanding?
-
-### Discussion Questions:
-
-- When does abstraction help your development process?
-- What factors influence your code organization decisions?
-- How do different approaches affect team collaboration?
-- What role does context play in choosing abstractions?
-- How do you balance principles with pragmatism?
-
-## 🎯 Learning Goals
-
-After this exercise, you'll have experienced:
-
-1. **Different organizational approaches** and their effects
-2. **Various levels of abstraction** in real code
-3. **Testing different code structures** and their requirements
-4. **Navigation patterns** in heavily structured code
-5. **Trade-offs** between different coding philosophies
-
-## The Bottom Line
+## Key Takeaway
 
 > **"Make sure bugs are easy to find, reproduce and fix."**

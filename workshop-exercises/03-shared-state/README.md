@@ -1,15 +1,15 @@
 # Workshop Exercise 3: Nature of Shared State Issue
 
-## 🎯 Objective
+## Objective
 
 Understand that OOP does not solve the most fundamental problem: **shared mutable state**. The only reliable way to avoid shared state issues is to eliminate shared state entirely, as demonstrated through pure functional programming in Go.
 
 > **"non-determinism = parallel processing + mutable state"**  
 > — Martin Odersky
 
-## 📚 Workshop Tasks
+## Workshop Tasks
 
-### Task 1: Identify the Problems (15 minutes)
+### Task 1: Identify the Problems
 
 **Individual Work**: Run both implementations and observe the contrasting approaches:
 
@@ -31,25 +31,15 @@ Understand that OOP does not solve the most fundamental problem: **shared mutabl
    - Run the program multiple times
    - What do you notice?
 
-### Task 2: Code Analysis (10 minutes)
+### Task 2: Code Analysis
 
 **Code Analysis** - Compare the two approaches:
 
-**Go (Pure Functional)**:
+- Go (Pure Functional)
 
-1. **Find the "state"**: How is state handled without sharing?
-2. **Trace the data flow**: How do functions pass state between each other?
+- C# (Shared State)
 
-**C# (Shared State)**:
-
-1. **Find the shared state**: Where is the `SystemState` object referenced?
-2. **Count the sharers**: How many objects access the same state?
-3. **Trace the mutations**: Which methods modify shared collections/counters?
-4. **Identify the race conditions**: Where do conflicts occur?
-
-### Task 3: Compare Solutions (20 minutes)
-
-**Group Discussion**: Compare the two paradigm approaches:
+### Task 3: Group Discussion
 
 1. **Go's Approach**: Pure functions + Immutable state
 
@@ -65,7 +55,7 @@ Understand that OOP does not solve the most fundamental problem: **shared mutabl
 
 3. **Universal Patterns**: What works regardless of paradigm?
 
-## 🔧 Running the Examples
+## Running the Examples
 
 ### Go Backend (Pure Functional - No Shared State):
 
@@ -76,10 +66,10 @@ go run main.go
 
 **Expected Output**:
 
-- ✅ Consistent results every time
-- ✅ Predictable behavior
-- ✅ No race conditions
-- ✅ Clean, composable functions
+- Consistent results every time
+- Predictable behavior
+- No race conditions
+- Clean, composable functions
 
 ### C# Backend (OOP with Shared State Problems):
 
@@ -90,12 +80,14 @@ dotnet run
 
 **Expected Output**:
 
-- ❌ Inconsistent counts and results
-- ❌ Race condition warnings
-- ❌ "INCONSISTENT STATE DETECTED!" messages
-- ❌ Different behavior on each run
+- Inconsistent counts and results
+- Race condition warnings
+- "INCONSISTENT STATE DETECTED!" messages
+- Different behavior on each run
 
-## 💡 Key Learning Points
+## Key Takeaway
+
+> **"Make sure feature A does not affect feature B."**
 
 ### Common Symptoms:
 
@@ -119,7 +111,3 @@ dotnet run
 - **Databases**: Concurrent transactions modifying the same records
 - **Microservices**: Services sharing data through APIs
 - **Mobile Apps**: UI state synchronization
-
-## The Bottom Line
-
-> **"Make sure feature A does not affect feature B."**

@@ -1,10 +1,10 @@
 # Programming Paradigm Comparison
 
-## 🎯 Overview
+## Overview
 
 Four code examples that demonstrate different programming paradigm combinations. Each processes the array `[1, 2, 3, 4, 5]` to calculate sum and count of even numbers.
 
-## 🔍 Key Differences
+## Key Differences
 
 ### 1. Procedural & Imperative
 

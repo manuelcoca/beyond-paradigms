@@ -2,14 +2,11 @@
 
 A practical workshop exploring universal software design principles through hands-on exercises across multiple programming paradigms and languages.
 
-## 🎯 Workshop Philosophy
+## Workshop Philosophy
 
-> **"Feature A affects only Feature A"**  
-> **"Make sure bugs are easy to find, reproduce and fix"**
+This workshop should demonstrates that good software design principles transcend programming paradigms. Whether you're writing object-oriented C#, functional Go, or component-based React - the fundamental challenges of managing complexity, shared state, and dependencies remain the same.
 
-This workshop demonstrates that good software design principles transcend programming paradigms. Whether you're writing object-oriented C#, functional Go, or component-based React - the fundamental challenges of managing complexity, shared state, and dependencies remain the same.
-
-## 📚 Workshop Structure
+## Workshop Structure
 
 ### Exercise 0: Paradigm Comparison
 
@@ -47,7 +44,7 @@ Work with an e-commerce checkout system that demonstrates how shared components 
 **Focus:** 90% of software failures come from bad error handling  
 Fix a crashing API by implementing proper error handling patterns that work across paradigms.
 
-## 🚀 Quick Start
+## Quick Start
 
 ### GitHub Codespaces (Recommended)
 
@@ -66,7 +63,7 @@ cd beyond-paradigms/workshop-exercises
 # Follow the README in each exercise directory
 ```
 
-## 🎓 Learning Outcomes
+## Learning Outcomes
 
 By completing this workshop, you'll understand:
 
@@ -77,15 +74,7 @@ By completing this workshop, you'll understand:
 - **Abstraction Trade-offs**: When clean code principles help vs. hurt
 - **Cross-Paradigm Patterns**: How the same solutions work in different contexts
 
-## 🎤 Presentation Materials
-
-The `presentation/` directory contains slides and materials for delivering this workshop, including:
-
-- Main presentation slides demonstrating universal anti-patterns
-- Live coding examples showing the same problems across paradigms
-- Interactive elements for engaging audiences
-
-## 💡 Key Insights
+## 💡 Key Takeaways
 
 - **Same Problems Everywhere**: Every paradigm struggles with complexity, state, and dependencies
 - **Same Solutions Work**: Separation of concerns, immutability, and proper error handling work universally

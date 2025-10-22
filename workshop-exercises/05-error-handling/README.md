@@ -1,20 +1,20 @@
 # Workshop Exercise 5: Error Handling
 
-## 🎯 Objective
+## Objective
 
 Learn about **proper error handling** by fixing a simple API endpoint that crashes with certain inputs.
 
 > **"90% of all software failures come from bad error handling"**
 
-## 🚨 The Problem
+## The Problem
 
 You have a simple Go API with **bad error handling** that:
 
-- ❌ **Panics and crashes** with invalid input
-- ❌ **Returns confusing responses** for missing users
-- ❌ **Gives no proper error messages** to help users
+- **Panics and crashes** with invalid input
+- **Returns confusing responses** for missing users
+- **Gives no proper error messages** to help users
 
-## 🏗️ The API
+## The API
 
 **Single endpoint**: `GET /user?id=X`
 
@@ -28,9 +28,9 @@ You have a simple Go API with **bad error handling** that:
 - `GET /user?id=9999` → 💥 **CRASHES THE SERVER**
 - `GET /user?id=999` → ⚠️ Confusing: `{"id": 999, "name": ""}`
 
-## 📚 Workshop Tasks
+## Workshop Tasks
 
-### Task 1: Test the API (5 minutes)
+### Task 1: Test the API
 
 **Choose your language:**
 
@@ -77,7 +77,7 @@ curl "http://localhost:5000/user"
 - Which requests work as expected?
 - Which requests cause problems?
 
-### Task 2: Run the Tests (5 minutes)
+### Task 2: Run the Tests
 
 **Go:**
 
@@ -98,7 +98,7 @@ dotnet test
 - What do the failing tests expect?
 - What HTTP status codes should be returned?
 
-### Task 3: Fix the Handler (15 minutes)
+### Task 3: Fix the Handler
 
 **Your mission**: Modify the endpoint handler so that:
 
@@ -107,7 +107,7 @@ dotnet test
 - Proper HTTP status codes are returned
 - Clear error messages are provided
 
-### Task 4: Verify (5 minutes)
+### Task 4: Verify
 
 **Run tests:**
 
@@ -149,7 +149,7 @@ curl "http://localhost:5000/user?id=999"
 curl "http://localhost:5000/user"
 ```
 
-## 🔧 Quick Commands
+## Quick Commands
 
 **Go:**
 
@@ -177,7 +177,7 @@ cd csharp && dotnet test
 curl "http://localhost:5000/user?id=1"
 ```
 
-## 🎓 Key Learning Points
+## Key Learning Points
 
 Good error handling means:
 

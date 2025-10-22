@@ -1,10 +1,10 @@
 # Workshop Exercise 1: Beyond Paradigms
 
-## 🎯 Objective
+## Objective
 
 Understand that the four pillars of OOP (abstraction, polymorphism, encapsulation, composition) are **proven concepts for good software design available in almost every language today** that can be implemented across paradigms and technologies.
 
-### 💡 C Polymorphism Example
+### C Polymorphism Example
 
 Polymorphism has existed in C since the 1970s. When you call `printf()`, the same function behaves differently based on the output device:
 
@@ -15,9 +15,9 @@ printf("Hello");  // Could write to console, file, or network
 
 > _"The UNIX system call interface has been polymorphic from the very beginning. When you call `open`, `close`, `read`, or `write`, you are using polymorphic functions. The device drivers are selected at runtime based on the device type."_ — Robert C. Martin
 
-## 🛠️ Workshop Tasks
+## Workshop Tasks
 
-### Task 1: Code Reading & Analysis (25 minutes)
+### Task 1: Code Reading & Analysis
 
 **Individual Work**: Read and understand all four implementations:
 
@@ -28,7 +28,7 @@ printf("Hello");  // Could write to console, file, or network
 
 **Focus**: Compare how each paradigm implements the same business logic and OOP principles.
 
-### Task 2: Cross-Paradigm Comparison (20 minutes)
+### Task 2: Cross-Paradigm Comparison
 
 **Group Discussion**:
 
@@ -71,13 +71,9 @@ npm install
 npm start
 ```
 
-## 💡 Key Insights
-
-### The Universal Truth:
+## 💡 Key Takeaways
 
 > **"Every paradigm is just a tool. They only differ in how state and functions are organized - but the fundamental design principles remain the same!"**
-
-### What You Should Discover:
 
 1. **Same Problems**: All paradigms need to organize state and behavior
 2. **Same Solutions**: Abstraction, encapsulation, polymorphism, composition work everywhere
